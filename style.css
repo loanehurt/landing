@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@1,400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 25px; }
+
+/* NAVBAR */
+.navbar { padding: 35px 0; border-bottom: 1px solid #f1f1f1; background: white; position: sticky; top: 0; z-index: 100; }
+.nav-flex { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 26px; font-weight: 800; text-decoration: none; color: #000; letter-spacing: -1px; }
+.logo span { font-family: 'Playfair Display', serif; color: #7a6a4a; font-style: italic; font-weight: 400; margin-left: 2px; }
+.nav-links a { margin-left: 35px; text-decoration: none; color: #666; font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+.btn-login { background: #000; color: #fff !important; padding: 10px 20px; border-radius: 2px; }
+
+/* BANNIERE */
+.banner {
+  padding: 200px 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../images/background.jpg');
+  background-size: cover; background-position: center;
+  color: white; text-align: center;
+}
+.pre-title { display: block; font-size: 11px; font-weight: 800; letter-spacing: 5px; color: #7a6a4a; margin-bottom: 20px; text-transform: uppercase; }
+.banner h1 { font-size: 72px; line-height: 1; margin-bottom: 35px; letter-spacing: -2px; }
+.banner h1 strong { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: #7a6a4a; }
+.banner p { font-size: 22px; max-width: 800px; margin: 0 auto 50px; opacity: 0.8; font-weight: 300; }
+
+/* STATS */
+.stats-bar { padding: 90px 0; border-bottom: 1px solid #eee; }
+.stats-flex { display: flex; justify-content: space-around; text-align: center; }
+.stat-item strong { display: block; font-size: 52px; font-weight: 800; color: #000; letter-spacing: -3px; }
+.stat-item span { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: #999; margin-top: 10px; display: block; }
+
+/* GRIDS & CARDS */
+.section { padding: 150px 0; }
+.section-header { margin-bottom: 70px; }
+.tag { font-size: 11px; font-weight: 800; color: #7a6a4a; letter-spacing: 2px; border-left: 3px solid #7a6a4a; padding-left: 15px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; }
+.card-img { height: 500px; background-size: cover; background-position: center; margin-bottom: 25px; transition: 0.5s ease; }
+.card:hover .card-img { transform: scale(1.02); }
+.category { font-size: 12px; font-weight: 700; color: #7a6a4a; text-transform: uppercase; }
+.card h3 { font-size: 26px; margin: 10px 0; }
+.card p { opacity: 0.5; font-size: 15px; }
+
+/* MANIFESTO */
+.manifesto { padding: 180px 0; background: #f9f8f4; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+.manifesto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.manifesto-text h2 { font-size: 56px; line-height: 1.1; margin: 25px 0; }
+.manifesto-quote { position: relative; }
+.manifesto-quote i { font-size: 40px; color: #7a6a4a; opacity: 0.2; margin-bottom: 20px; display: block; }
+.manifesto-quote blockquote { font-family: 'Playfair Display', serif; font-style: italic; font-size: 38px; line-height: 1.2; margin: 0; }
+
+/* FOOTER */
+.footer { padding: 120px 0 50px; border-top: 1px solid #eee; background: white; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; }
+.footer h4 { font-size: 14px; letter-spacing: 2px; margin-bottom: 35px; color: #000; }
+.footer a { display: block; text-decoration: none; color: #888; margin-bottom: 15px; font-size: 14px; font-weight: 600; }
+.footer-bottom { margin-top: 100px; padding-top: 30px; border-top: 1px solid #eee; text-align: center; font-size: 12px; opacity: 0.5; }
