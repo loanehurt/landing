@@ -1,0 +1,13 @@
+.btn-dark {
+  background: var(--text);
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.4s;
+  display: inline-block;
+}
+.btn-dark:hover { background: var(--accent); transform: translateY(-2px); }

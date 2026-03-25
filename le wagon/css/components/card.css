@@ -1,0 +1,27 @@
+.section { padding: 120px 0; }
+.section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 80px; }
+.subtitle { opacity: 0.5; margin-top: 10px; }
+.divider { width: 60px; height: 1px; background: var(--accent); }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; }
+
+.card { cursor: pointer; }
+.card-img {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+  transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+}
+.card:hover .card-img { transform: translateY(-15px); box-shadow: 0 30px 60px rgba(0,0,0,0.08); }
+
+.card-meta { padding-top: 30px; }
+.category { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); display: block; margin-bottom: 10px; font-weight: 600; }
+.card-meta h3 { font-size: 24px; margin-bottom: 8px; font-weight: 400; }
+.card-meta p { font-size: 15px; opacity: 0.4; margin-bottom: 20px; }
+
+.card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 20px; }
+.rating { font-weight: 600; font-size: 14px; }
+.rating i { color: #d4af37; margin-right: 5px; }
+.status { font-size: 11px; text-transform: uppercase; opacity: 0.4; letter-spacing: 1px; }
